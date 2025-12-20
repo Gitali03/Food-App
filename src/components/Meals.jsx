@@ -7,7 +7,7 @@ const requestConfig = {};
 
 export default function Meals() {
   const {
-    data: loadedMeals,
+    data: loadedMeals = [],
     isLoading,
     error,
   } = useHttp("http://localhost:3000/meals", requestConfig, []);
